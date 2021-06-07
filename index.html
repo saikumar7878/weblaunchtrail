@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="websites, web development, web services, responsive websites, ecommerce websites, professional websites,web applications, web designing, advanced websites, best websites, user-Friendly websites, mobile applications, mobile apps, best deals applications, high level websites, high level mobile apps">
+    <meta name="description" content="WebLaunch is one of the best web development services company which yields professional, advanced websites with best deals. Our motto is make our clients happy with our services. We provide responsive websites, mobile apps, web applications etc...">
+    <meta name="site_name" content="WebLaunch">
+    <meta name="url" content="www.weblaunch.in">
+    <meta name="tittle" content="Web development services | weblaunch company">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authors" content="Avinash Gummadi">
+    <title>Web development services | weblaunch company</title>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <!--google fonts and fontawesome libraries  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maitree" integrity="sha384-7+ftR7fYor92lD358HLyXZI8eY0FMoDdjRMi4tR5vCgtBhDQ65wmdq92u59R8DJO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" integrity="sha384-9uZxqYXGPZfYeOA9Noy+KiMbKqTEguwn6exm/6ahYYW/pXW23uMTDiXB+OgKb9zP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton%7COswald" integrity="sha384-IGYAuY9nvBbDPQANPUqNH125FpStYJ6yIdP3WrBrMEDtzQvXJrjWHs8DFVyAnuOr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" integrity="sha384-4r9SMzlCiUSd92w9v1wROFY7DlBc5sDYaEBhcCJR7Pm2nuzIIGKVRtYWlf6w+GG4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" integrity="sha384-qbuN0X3aymuV5K8oZGm4HC85r+1d9vITMvhCMq8D97RrpgvB6jDxquGfOJG9hPQy" crossorigin="anonymous">
+    <!-- font style for few hover effects -->
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/hover.css" integrity="sha384-cCY8qLP80E8ALCUtmYlLWSNmCaoNVBoCUq5bDTz2Bh7ttRw3UxWFI2MpyJrpJAWv" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <!-- Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+     <script type="text/javascript" src="./javascript/contact.js"></script>
+    <!-- HEADING js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js" integrity="sha384-RsdohbnvFky97FB2V3f52orr13vWk+cO/ncjHxURmfr36IULH2kEnzrIm40Rff9U" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js" integrity="sha384-W2VAKXcJSLMKDtQi5Tk+c9Ch1woWBIgx7bdt7GDHvx+bHNPJzbvXhiEwM8ANbtmv" crossorigin="anonymous"></script>
+    <!-- header fixing on scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" integrity="sha384-CgeP3wqr9h5YanePjYLENwCTSSEz42NJkbFpAFgHWQz7u3Zk8D00752ScNpXqGjS" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/logo.css" type="text/css">
+
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/tab.css" type="text/css">
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+
+  </head>
+  <body>
+
+    <div class="container mobile_container">
+      <div class="signup_form" id="id02">
+        <div class="animate">
+          <div class="to expand">
+            <div class="to-contents">
+              <div class="upper">
+                <div class="avatar-large me"></div>
+                <div class="name-large">LOGO MAKER</div>
+                <div class="x-touch" onclick="document.getElementById('id02').style.display='none'">
+                  <div class="x">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="down">
+                <div class="row">
+                  <div class="link"><a href="tel:+91 6302 666 131" rel="noopener">REACH US</a></div>
+                  <span class="logo_symbols fa fa-phone"></span>
+                </div>
+                <div class="row">
+                  <div class="link"><a href="https://web.whatsapp.com/send?phone=916302666131" target="_blank" rel="noopener">WHATSAPP</a></div>
+                  <span class="logo_symbols fa fa-whatsapp"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--container-->
+
+    <div class="root">
+    <header>
+      <div class="fix_header mobile_head">
+      <span class="menu-icon" data-trigger="#main_nav">☰ <span class="mobile-menu-hide">MENU</span></span>
+        <nav class="navbar-collapse" id="main_nav"><!--navbar collapse-->
+          <ul class="navbar-nav menu" id="hightlight_nav">
+            <li class="nav-item active"> <a class="nav-link" href="#">HOME</a> </li>
+            <li class="nav-item"><a class="nav-link" href="#our_services">OUR RESOURCES</a></li>
+            <li class="nav-item"><a class="nav-link" href="#our_dealings">OUR DEALINGS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ecommerce">E-COMMERCE</a></li>
+            <li class="nav-item" onclick="document.getElementById('id02').style.display='block'"><a class="nav-link" href="#"> LOGO</a></li>
+            <li class="nav-item"><a class="nav-link" href="#wl_agency">WL_AGENCY</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">CONTACT US</a></li>
+          </ul>
+          <div class="offcanvas-header mt-3">
+            <button class="btn btn-outline-danger btn-close float-right">&#8250;</button>
+          </div>
+        </nav> <!-- navbar-collapse.// -->
+        <div class=".logo_class" onclick="location.href = 'index.html'">
+          <div class="stage">
+            <div class="cubespinner">
+              <div class="face1"><a href="index.html" class="logo_link"><img src="./images/logo.png" alt="weblaunchlogo" class="logo"></a></div>
+              <div class="face2"><a href="index.html" class="logo_link"><img src="./images/logo.png" alt="weblaunchlogo" class="logo"></a></div>
+              <div class="face3"><a href="index.html" class="logo_link"><img src="./images/logo.png" alt="weblaunchlogo" class="logo"></a></div>
+              <div class="face4"><a href="index.html" class="logo_link"><img src="./images/logo.png" alt="weblaunchlogo" class="logo"></a></div>
+              <div class="face5"><a href="index.html" class="logo_link"><img src="./images/logo.png" alt="weblaunchlogo" class="logo"></a></div>
+              <div class="face6"><a href="index.html" class="logo_link"><img src="./images/logo.png" alt="weblaunchlogo" class="logo"></a></div>
+            </div>
+          </div>
+          <h2 id="quote">WEB LAUNCH</h2>
+          <div class="phone-call">
+                <a href="tel:+91 6302 666 131" rel="noopener" class="phone_link">
+                  <span class="fa fa-phone" aria-hidden="true"><span class="mobile-num-hide">6302-666-131</span></span>
+                </a>
+          </div>
+        </div>
+        <div class="head-req">
+          <a href="https://www.google.com"  target="_blank" rel="noopener">BUY DOMAIN</a>
+        </div>
+      </div>
+        <section id="showcase">
+                <div class="slideshowContainer">
+                  <!-- <img class="imageSlides" src="./images/thatha_s_bg.png" alt="" width="100%"> -->
+                  <img class="imageSlides" src="C:\Users\avina\Downloads\home_bg.jpg" alt="" width="100%">
+                  <img class="imageSlides" src="./images/robo_bg.jpg" alt="" width="100%">
+                  <!-- <img class="imageSlides" src="./images/thatha_speed_bg.png" alt="" width="100%"> -->
+                  <!-- <img class="imageSlides flip_image" src="C:\Users\avina\Downloads\image(1).png" alt="" width="100%"> -->
+                  <img class="imageSlides flip_image" src="./images/all_services.png" alt="" width="100%">
+                  <img class="imageSlides" src="./images/web_dev_bg.png" alt="" width="100%">
+                  <img class="imageSlides web_bg_img" src="./images/web_bg.png" alt="">
+                  <img class="imageSlides money_bg_img" src="./images/monkey_bg.png" alt="">
+
+                  <span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+                  <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+              <div class="slideshowCircles">
+                  <span class="circle dot"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+              </div>
+              </div>
+
+              <div class="minislide-box">
+                <div class="minislideshowCircles">
+                  <span class="minicircle minislide_hover minidot"><a href="#">HOME</a></span>
+                  <span class="minicircle minislide_hover"><a href="#our_services">OUR RESOURCES</a></span>
+                  <span class="minicircle minislide_hover"><a href="#our_dealings">OUR DEALINGS</a></span>
+                  <span class="minicircle minislide_hover"><a href="#ecommerce">E-COMMERCE</a></span>
+                  <span class="minicircle minislide_hover" onclick="document.getElementById('id02').style.display='block'"><a href="#">LOGO</a></span>
+                  <span class="minicircle minislide_hover"><a href="#wl_agency">WL_AGENCY</a></span>
+                  <span class="minicircle minislide_hover"><a href="#footer">CONTACT US</a></span>
+                </div>
+
+              </div>
+
+          </section>
+          <div class="req_quote_div">
+            <h1 class="req_quote_head">GROW YOUR BRAND by partnering with WebLaunch</h1>
+          </div>
+          <div class="req-quote" id="req-quote">
+              <div class="form_typing">
+                <p>Fill the form and will get back to you.</p>
+              </div>
+            <form class="quote" method="post">
+              <input type="text" class="cname" id="cname" placeholder="Enter your name....."><br>
+              <input type="email" class="cemail" id="cemail" placeholder="Email....."><br>
+              <input type="tel" class="cnum" id="cnum" placeholder="Number"><br>
+              <textarea class="cneeds" id="cneeds" placeholder="Details of your requirements....."></textarea><br>
+              <button type="button" name="button" onclick="Submit()" class="get_to_us_btn">Get to Us</button>
+            </form>
+          </div>
+    </header>
+    <main class="root-body">
+      <section>
+        <div class="container90">
+          <div class="domain">
+            <div class="hexa_domain">
+            <div class="hex-row">
+              <div class="hex hex1">
+                <div class="top"></div>
+                <div class="middle"><p class="store_services">LOGO</p></div>
+                <div class="bottom"></div>
+              </div>
+              <div class="hex hex2">
+                <div class="top"></div>
+                <div class="middle"><p class="store_services">SSL</p></div>
+                <div class="bottom"></div>
+              </div>
+            </div>
+            <div class="hex-row even">
+              <div class="hex hex3">
+                <div class="top"></div>
+                <div class="middle"><p class="store_services">HOSTING</p></div>
+                <div class="bottom"></div>
+              </div>
+              <div class="hex hex4"><span class="buy_domain">BUY DOMAIN</span></div>
+              <div class="hex hex5">
+                <div class="top"></div>
+                <div class="middle"><p class="store_services">EMAIL</p></div>
+                <div class="bottom"></div>
+              </div>
+              </div>
+              <div class="hex-row">
+                <div class="hex hex6">
+                  <div class="top"></div>
+                  <div class="middle"><p class="store_services">SEO</p></div>
+                  <div class="bottom"></div>
+                </div>
+                <div class="hex hex7">
+                  <div class="top"></div>
+                  <div class="middle"><p class="store_services">WEBSITE</p></div>
+                  <div class="bottom"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+    <section  id="wrap">
+      <div class="container">
+        <article class="imagination_article">
+          <blockquote class="imagination_blockquote" id="our_services">
+              <strong>Imagination</strong> is <em>more important</em> than <strong>knowledge</strong>
+          </blockquote>
+      </article>
+      </div>
+    </section>
+    <section>
+      <div class="container cf">
+          <div class="service_text">
+            <span>O</span>
+            <span>U</span>
+            <span>R</span>
+            <span></span>
+            <span>R</span>
+            <span>E</span>
+            <span>S</span>
+            <span>O</span>
+            <span>U</span>
+            <span>R</span>
+            <span>C</span>
+            <span>E</span>
+            <span>S</span>
+          </div>
+        <div class="box-set">
+          <div class="box animation-element multi-step-left cf">
+            <div class="gallery">
+            <img src="./images/web_design_res.png" alt="web design icon">
+            <div class="service">
+              <h4>Web Design</h4>
+            </div>
+            <div class="service_dis">
+              <p>Simple to Complex with the best architecture design. Creation of attractive and user-friendly websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box cf video_tv"><!--  animation-element multi-step-left-->
+          <div class="gallery">
+            <video autoplay muted loop  class="wl_video_bg">
+              <source src="./videos/wl_video_bg.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+            </div>
+          </div>
+          <div class="box animation-element multi-step-left cf">
+            <div class="gallery">
+            <img src="./images/ecommerce_icon.png" alt="ecommerce icon">
+            <div class="service">
+              <h4>Ecommerce</h4>
+            </div>
+            <div class="service_dis">
+              <p>WebLaunch Helps to Improve your ECommerce site to increase your customers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box cf video_tv_tab"><!--  animation-element multi-step-left-->
+          <div class="gallery">
+            <video autoplay muted loop  class="wl_video_bg">
+              <source src="./videos/wl_video_bg.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+            </div>
+          </div>
+          <div class="box  animation-element multi-step-right cf">
+            <div class="gallery">
+            <img src="./images/brandhighlights.png" alt="branding icon">
+            <div class="service">
+              <h4>Brand Highlights</h4>
+            </div>
+            <div class="service_dis">
+              <p>We create your brand identity with the best graphic extensions.</p>
+            </div>
+          </div>
+        </div>
+          <div class="box animation-element multi-step-right cf">
+            <div class="gallery">
+            <img src="./images/logo_res.png" alt="help & support icon">
+            <div class="service">
+              <h4>LOGO</h4>
+            </div>
+            <div class="service_dis">
+              <p>Professional Logos not only get a brand recognized, other than that they can also be leveraged to convey your brand's core values to the audience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="box animation-element multi-step-left cf">
+          <div class="gallery">
+          <img src="./images/Domain_res.png" alt="help & support icon">
+          <div class="service">
+            <h4>Domain</h4>
+          </div>
+          <div class="service_dis">
+            <p>We can help brand image over the web. We do creative designing for online marketing</p>
+          </div>
+        </div>
+      </div>
+      <div class="box animation-element multi-step-right cf">
+        <div class="gallery">
+        <img src="./images/help_support_icon.png" alt="help & support icon">
+        <div class="service">
+          <h4>Help & Support</h4>
+        </div>
+        <div class="service_dis">
+          <p>We can help brand image over the web. We do creative designing for online marketing</p>
+        </div>
+      </div>
+    </div>
+        </div>
+        <marquee class="personal_website" behavior="alternate">We Design Personalized Websites Too</marquee>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="about_website"><i class="fas fa-quote-left fa2"></i>
+          <div class="website_text"><i class="fas fa-quote-right fa1"></i>
+            <div>
+              <h3>We Make Imaginations True</h3>
+              <p  id="our_dealings"><abbr title="www.weblaunch.in">"We have compiled some of the best web design quotes, animations, forms, social media links, hover effects, image & video effects and adorable features for your "enthusiasm, inspiration & reference."</abbr></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <p class="dealings">
+          <span>
+            OUR DEALINGS
+          </span>
+        </p>
+        <q class="deals_matter">Get a well designed responsive website on your requirements with an reasonable/affordable price .Go through our DEALS and contact us for web designing.</q>
+        <div class="box-set">
+          <div class="scheme hvr-curl-top-left animation-element slide-left">
+            <div class="primary_bg">
+              <h1>Primary</h1>
+              <!-- <h3>15000/-</h3> -->
+              <ul>
+                <li>Upto 10 pages</li>
+                <li>Responsive to all devices</li>
+                <li>Free hosting for one year</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+            </div>
+          <div class="scheme hvr-curl-top-left animation-element slide-up">
+            <div class="advanced_bg">
+              <h1>Advanced</h1>
+              <!-- <h3>25000/-</h3> -->
+              <ul>
+                <li>Upto 25 pages</li>
+                <li>Responsive to all devices</li>
+                <li>Free hosting for one year</li>
+                <li>Free Domain</li>
+                <li>Brand Highlights</li>
+                <li>Database</li>
+                <li>High Animations</li>
+                <li>24/7 support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="scheme hvr-curl-top-left animation-element slide-right">
+            <div class="premium_bg">
+              <h1>Premium</h1>
+                <!-- <h3>35000/-</h3> -->
+                <ul class="tab_premium">
+                  <li class="tab_premium_list">Upto 35 pages</li>
+                  <li class="tab_premium_list">Responsive to all devices</li>
+                  <li class="tab_premium_list">Free hosting for one year</li>
+                  <li class="tab_premium_list">Free Domain</li>
+                  <li class="tab_premium_list">Brand Highlights</li>
+                  <li class="tab_premium_list">Database</li>
+                  <li class="tab_premium_list">Security measures</li>
+                  <li class="tab_premium_list">Unlimitted High Animations</li>
+                  <li class="tab_premium_list">Chatbot</li>
+                  <li class="tab_premium_list">Inbuild SEO</li>
+                  <li class="tab_premium_list">Targeting Keywords 20</li>
+                  <li class="tab_premium_list" id="ecommerce">24/7 support</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="e-commerce">
+          <div class="ecommerce-heading">
+              <div class="ecom_head_1p"><h1 class="neon">E-COMMERCE WEBSITE</h1></div><div class="ecom_head_2p"><h1 class="neon">explore your business</h1></div>
+          </div>
+          <div class="box-ecommerce">
+            <div class="ecom-layout">
+              <img src="./images/ecommerce_layout1.png" alt="ecommerce layout">
+              <h5>ECOMMERCE LAYOUT</h5>
+              <p>Our platform is feature rich, easy to use and highlights your products and includes ratings</p>
+            </div>
+            <div class="ecom-layout">
+              <img src="./images/signup_pay.png" alt="payment icon">
+              <h5>SIMPLE SIGNUP AND PAY</h5>
+              <p>Our simple to navigate e-commerce system gives your customer a clear path to checkout.</p>
+            </div>
+            <div class="ecom-layout">
+              <img src="./images/product_filtering.png" alt="reportig icon">
+              <h5>PRODUCT FILTERING</h5>
+              <p>Let your customers create their own shopping experience by letting them filter through category pages.</p>
+            </div>
+            <div class="ecom-layout">
+              <img src="./images/cart_ecom.png" alt="reportig icon">
+              <h5>DYNAMIC SHOPPING CART</h5>
+              <p>Make adding items to the “shopping cart” easy! The shopper should see a cart dynamically populate.</p>
+            </div>
+            <div class="ecom-layout">
+              <img src="./images/sharing_products.png" alt="reportig icon">
+              <h5>SHARING PRODUCTS</h5>
+              <p>Incorporate “sharing” functionality so users can send items they like to friends.</p>
+            </div>
+            <div class="ecom-layout">
+              <img src="./images/intuitiveuser.png" alt="reportig icon">
+              <h5>INTUITIVE USER</h5>
+              <p>Our developers creates websites that are intuitive and easy for all users.</p>
+            </div>
+            <div class="ecom-layout">
+              <img src="./images/reporting-icon.png" alt="reportig icon">
+              <h5>REPORTING</h5>
+              <p>The e-commerce dashboard allows you to track and fulfill orders of your customers.</p>
+            </div>
+            <div class="ecom-layout" id="wl_agency">
+              <img src="./images/securesite-icon.jpg" alt="">
+              <h5>SECURE SITE</h5>
+              <p>We will assist you in setting up your gateway and ssl certificate if you don't already have one.</p>
+            </div>
+          </div>
+          <!-- <div> We drive your customers a pleasant UX from the homepage to checkout.</div> -->
+
+        </div>
+          <div class="wl_process_total">
+            <h1 class="wl_process_heading" role="img" aria-label="Good day!">
+              <span class="letter rev">W</span>
+              <span class="letter spl_rotate_e">e</span>
+              <span class="letter rev">b</span>
+              <span class="letter">L</span>
+              <span class="letter rev">a</span>
+              <span class="letter">u</span>
+              <span class="letter">n</span>
+              <span class="letter rev">c</span>
+              <span class="letter">h</span>
+              <span class="letter rev"> </span>
+              <span class="letter rev">A</span>
+              <span class="letter">g</span>
+              <span class="letter rev">e</span>
+              <span class="letter">n</span>
+              <span class="letter rev">c</span>
+              <span class="letter rev">y</span>
+              <span class="letter rev"> </span>
+              <span class="letter">P</span>
+              <span class="letter rev">r</span>
+              <span class="letter">o</span>
+              <span class="letter rev">c</span>
+              <span class="letter">e</span>
+              <span class="letter rev">s</span>
+              <span class="letter">s</span>
+            </h1>
+            <div class="wl_process_slideshowContainer">
+              <div class="wl_process_slideshowCircles">
+                  <span class="wl_process_circle wl_process_dot">Kick-Start</span>
+                  <span class="wl_process_circle">WebLaunch Strategy</span>
+                  <span class="wl_process_circle">Informaton Architecture</span>
+                  <span class="wl_process_circle">Design Mockups</span>
+                  <span class="wl_process_circle">Coding & Development</span>
+                  <span class="wl_process_circle">Quality Assurance</span>
+                  <span class="wl_process_circle">Launch & Optimization</span>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/kickstart.jpg" alt="areca plates" width="100%">
+                <div class="wl_process_matter">
+                  <h1>Kick-Start</h1>
+                  <p>The WebLaunch team hosts an initial meeting with the client to discuss the scope of the project, including platforms and channels, goals, target audience, existing brand strategies, and more.</p><br>
+                  <p>In this, WebLaunch strategist – who leads the project – will gather the necessary information to conduct in-depth competitor research and complete a comprehensive digital strategy.</p>
+                </div>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/wl_strategy.png" alt="food in designed areca plates" width="100%">
+                <div class="wl_process_matter">
+                  <h1>WebLaunch Strategy</h1>
+                  <p>After the kick-start call, the WebLaunch strategist will utilize the brand strategy document that was completed in step 1 to build a customized digital strategy.</p><br>
+                  <p>Each strategy is personalized, depending on the client’s goals, target audience, and the improvements that a website or app needs in order to be successful and kick start the progress.</p>
+                </div>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/info_arch.jpg" alt="food in areca plates" width="100%">
+                <div class="wl_process_matter">
+                  <h1>Informaton Architecture</h1>
+                  <p>weblaunch strategists and information architects will work closely together to document the existing features and functionalities of the current platform.</p><br>
+                  <p>Then, they work together to create a new and improved user experience, documenting all elements for designers and developers and ensuring they are reflected in later stages.</p>
+                </div>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/design_mocks.png" alt="honey" width="100%">
+                <div class="wl_process_matter">
+                  <h1>Design Mockups</h1>
+                  <p>After the website  architecture is approved, designers will create wireframes – which are essentially blueprints of a website that outline the structure.</p><br>
+                  <p>After wireframes are designed, web designers will add colors, logos, and branding elements to create a static image-like design of what the web pages will look like to the user.</p>
+                </div>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/coding_agency.jpg" alt="honey" width="100%">
+                <div class="wl_process_matter">
+                  <h1>Coding & Development</h1>
+                  <p>Then we move into the development stage. Here, front-ender's will create the frontward-facing interface – which customers will see – while the back-ender's will create the content management system and tie that administrative dashboard to the front-end.</p><br>
+                  <p>After wireframes are designed, web designers will add colors, logos, and branding elements to create a static image-like design of what the web pages will look like to the user.</p>
+                </div>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/quality_agency.jpg" alt="honey" width="100%">
+                <div class="wl_process_matter">
+                  <h1>Quality Assurance</h1>
+                  <p>In the entire development process and before the website goes live, team members(including the developers and weblaunch strategists) will test every facet of the website.</p><br>
+                  <p>Testing in several angles , To ensure it's functions properly and matches the original designs that were approved by the client.</p>
+                </div>
+              </div>
+              <div class="wl_process_imageSlides">
+                <img class="wl_process_image" src="./images/opt_agency.png" alt="honey"  width="100%">
+                <div class="wl_process_matter">
+                  <h1>Launch & Optimization</h1>
+                  <p>Once the platform is built and the testing is completed, the new website will be pushed live to the public. However, the work doesn’t stop there.</p><br>
+                  <p>The weblaunch team will continue to monitor its performance and security, optimizing whenever possible to maximize results.</p>
+                </div>
+              </div>
+
+              <span id ="wl_process_leftArrow" class="wl_process_slideshowArrow">&#8249;</span>
+              <span id ="wl_process_rightArrow" class="wl_process_slideshowArrow">&#8250;</span>
+          </div>
+          </div>
+          <div class="wl_agency_mobile">
+            <h1>WebLaunch Agency Process</h1>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency1()">
+                <span>Kick-Start</span><span>&#8249;</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter1">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/kickstart.jpg" alt="areca plates" width="100%">
+                </div>
+                <div class="des_wl_agency">
+                  <h1>Kick-Start</h1>
+                  <p>The WebLaunch team hosts an initial meeting with the client to discuss the scope of the project, including platforms and channels, goals, target audience, existing brand strategies, and more.</p><br>
+                  <p>In this, WebLaunch strategist – who leads the project – will gather the necessary information to conduct in-depth competitor research and complete a comprehensive digital strategy.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency2()">
+                <span>WebLaunch Strategy</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter2">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/wl_strategy.png" alt="food in designed areca plates" width="100%">
+                </div>
+                <div class="des_wl_agency">
+                  <h1>WebLaunch Strategy</h1>
+                  <p>After the kick-start call, the WebLaunch strategist will utilize the brand strategy document that was completed in step 1 to build a customized digital strategy.</p><br>
+                  <p>Each strategy is personalized, depending on the client’s goals, target audience, and the improvements that a website or app needs in order to be successful and kick start the progress.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency3()">
+                <span>Informaton Architecture</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter3">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/info_arch.jpg" alt="food in areca plates" width="100%">
+                </div>
+              <div class="des_wl_agency">
+                <h1>Informaton Architecture</h1>
+                <p>weblaunch strategists and information architects will work closely together to document the existing features and functionalities of the current platform.</p><br>
+                <p>Then, they work together to create a new and improved user experience, documenting all elements for designers and developers and ensuring they are reflected in later stages.</p>
+              </div>
+            </div>
+          </div>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency4()">
+                <span>Design Mockups</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter4">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/design_mocks.png" alt="honey" width="100%">
+                </div>
+                <div class="des_wl_agency">
+                  <h1>Design Mockups</h1>
+                  <p>After the website  architecture is approved, designers will create wireframes – which are essentially blueprints of a website that outline the structure.</p><br>
+                  <p>After wireframes are designed, web designers will add colors, logos, and branding elements to create a static image-like design of what the web pages will look like to the user.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency5()">
+                <span>Coding & Development</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter5">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/coding_agency.jpg" alt="honey" width="100%">
+                </div>
+                <div class="des_wl_agency">
+                  <h1>Coding & Development</h1>
+                  <p>Then we move into the development stage. Here, front-ender's will create the frontward-facing interface – which customers will see – while the back-ender's will create the content management system and tie that administrative dashboard to the front-end.</p><br>
+                  <p>After wireframes are designed, web designers will add colors, logos, and branding elements to create a static image-like design of what the web pages will look like to the user.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency6()">
+                <span>Quality Assurance</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter6">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/quality_agency.jpg" alt="honey" width="100%">
+                </div>
+                <div class="des_wl_agency">
+                  <h1>Quality Assurance</h1>
+                  <p>In the entire development process and before the website goes live, team members(including the developers and weblaunch strategists) will test every facet of the website.</p><br>
+                  <p>Testing in several angles , To ensure it's functions properly and matches the original designs that were approved by the client.</p>
+                </div>
+              </div>
+            </div>
+            <div class="wl_ag_mob_process">
+              <div class="mob_wl_ag_heading" onclick="ShowHideAgency7()">
+                <span>Launch & Optimization</span>
+              </div>
+              <div class="mob_wl_ag_matter" id="mob_wl_ag_matter7">
+                <div class="img_wl_agency">
+                  <img class="wl_process_image" src="./images/opt_agency.png" alt="honey"  width="100%">
+                </div>
+                <div class="des_wl_agency">
+                  <h1>Launch & Optimization</h1>
+                  <p>Once the platform is built and the testing is completed, the new website will be pushed live to the public. However, the work doesn’t stop there.</p><br>
+                  <p>The weblaunch team will continue to monitor its performance and security, optimizing whenever possible to maximize results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="yt_clients">
+          <h4 class="wordCarousel">
+            <span>FOR OUR CLIENTS </span>
+            <div>
+              <!-- Use classes 2,3, or 4 to match the number of words -->
+              <ul class="flip4">
+                <li>AWARENESS</li>
+                <li>REFERENCE</li>
+                <li>KNOWLEDGE</li>
+                <li>UNDERSTANDING</li>
+              </ul>
+            </div>
+          </h4>
+        </div>
+        <iframe class="yt_1" width="560" height="315" src="https://www.youtube-nocookie.com/embed/vzdA66d6xDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="yt_2" width="560" height="315" src="https://www.youtube-nocookie.com/embed/QXnxvZOhswA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="about_weblaunch">
+          <ul class="wl_head hidden hidden_mobile">
+            <li>W</li>
+            <li class="ghost">E</li>
+            <li class="ghost">B</li>
+            <li class="spaced">L</li>
+            <li class="ghost">a</li>
+            <li class="ghost">u</li>
+            <li class="ghost">n</li>
+            <li class="ghost">c</li>
+            <li class="ghost">h</li>
+          </ul>
+          <div class="notepaper">
+            <figure class="wl_matter">
+              <blockquote class="curly-quotes" cite="https://www.youtube.com/watch?v=qYLrc9hy0t0">
+                Web Launch is not limited just for web designing ,we also highlights your brand . We best at providing secured sites with high animations along with 24/7 support.
+              </blockquote>
+              <figcaption class="quote-by">— WebLaunch team</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <div class="container">
+        <h1>Our Clients</h1>
+        <div class="our-works">
+          <div class="client">
+            <img src="./images/healthybharat_logo.png" alt="healthybharat logo">
+            <span>HealthyBharat</span>
+            <a href="#">View More</a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+    <footer id="footer">
+      <svg viewBox="0 0 120 32">
+        <linearGradient id="my-cool-gradient" x2="1" y2="1">
+          <stop offset="0%" stop-color="#4f7710" />
+          <stop offset="50%" stop-color="#224488" />
+          <stop offset="100%" stop-color="#112266" />
+        </linearGradient>
+        <defs>
+          <mask id="xxx">
+            <circle cx="7" cy="12" r="40" fill="#fff" />
+          </mask>
+
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="
+              1 0 0 0 0
+              0 1 0 0 0
+              0 0 1 0 0
+              0 0 0 13 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+  	       </filter>
+           <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+         </defs>
+
+         <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use>
+         <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+
+    <g class="gooeff">
+      <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
+      <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
+      <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
+      <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+
+  </svg>
+
+  <div class="container">
+    <div class="contact">
+      <div class="networks">
+        <div class="netbox">
+          <a class="icon ion-social-google" href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=weblaunch2021@gmail.com&tf=1" target="_blank" rel="noopener" data-tip="weblaunch2021@gmail.com"></a>
+          <a class="icon ion-social-whatsapp" href="https://web.whatsapp.com/send?phone=916302666131" target="_blank" rel="noopener" data-tip="Ping me to reach me"></a>
+          <a class="icon ion-social-instagram" href="https://www.instagram.com/weblaunchofficial/" target="_blank" rel="noopener" data-tip="Follow us to reach here for instant WebLaunch offers and updates"></a>
+          <a class="icon ion-social-facebook" href="https://www.facebook.com/web.launch.14" target="_blank" rel="noopener" data-tip="Daily post about WebLaunch offers"></a>
+          <a class="icon ion-social-twitter" href="https://twitter.com/WebLaunch2" target="_blank" rel="noopener" data-tip="More stuff about WebLaunch and more fun :)"></a>
+          <a class="icon ion-social-linkedin" href="https://www.linkedin.com/in/web-launch-660094212/" target="_blank" rel="noopener" data-tip="Follow and share us to know about WebLaunch openings and job card"></a>
+        </div>
+      </div>
+      <div class="nav-set">
+        <span class="nav-option"><a href="#">HOME</a></span>
+        <span class="nav-option"><a href="#our_services">OUR RESOURCES</a></span>
+        <span class="nav-option"><a href="#our_dealings">OUR DEALINGS</a></span>
+        <span class="nav-option"><a href="ecommerce">E-COMMERCE</a></span>
+        <span class="nav-option" onclick="document.getElementById('id02').style.display='block'"><a href="#">LOGO</a></span>
+        <span class="nav-option"><a href="#wl_agency">WL_AGENCY</a></span>
+        <span class="nav-option"><a href="#footer">CONTACT US</a></span>
+      </div>
+      <div class="company">
+        <p>WebLaunch &copy2021</p>
+      </div>
+    </div>
+    <div class="address">
+      <!-- <iframe src="https://free.timeanddate.com/clock/i7u239md/n1521/szw60/szh60/hocbbb/hbw6/cf100/hnce1ead6/hwc000/fan2/fas16/fdi64/mqc000/mqs4/mql20/mqw2/mqd94/mhc000/mhs4/mhl20/mhw2/mhd94/mmc000/mml10/mmw1/mmd94/hmr7/hsc000/hss1/hsl90" frameborder="0" width="60" height="60"></iframe> -->
+      <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+      </div>
+      <h5>INDIA</h5>
+      <p>8-2-293/82/vn/197/205, Vinayak nagar, Near Apollo hospital, film nagar, Hyderabad.</p>
+    </div>
+  </div><!--container ends-->
+</footer>
+  </div>
+  <div class="social_media_right_side">
+    <ul>
+      <a href="tel:+91 6302 666 131" rel="noopener">
+        <li class="phone">
+          <i class="fas fa-headset" aria-hidden="true"></i>
+          <div class="slider">
+            <p>Call Us</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="https://web.whatsapp.com/send?phone=916302666131" target="_blank" rel="noopener">
+        <li class="whatsapp">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          <div class="slider">
+            <p>whatsapp</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="https://www.instagram.com/weblaunchofficial/" target="_blank" rel="noopener">
+        <li class="instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <div class="slider">
+            <p>instagram</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=weblaunch2021@gmail.com&tf=1" target="_blank" rel="noopener">
+        <li class="google">
+          <i class="fa fa-google" aria-hidden="true"></i>
+          <div class="slider">
+            <p>gmail</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="https://www.facebook.com/web.launch.14" target="_blank" rel="noopener">
+        <li class="facebook">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <div class="slider">
+            <p>facebook</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="https://twitter.com/WebLaunch2" target="_blank" rel="noopener">
+        <li class="twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <div class="slider">
+            <p>twitter</p>
+          </div>
+        </li>
+      </a>
+
+      <a href="https://www.linkedin.com/in/web-launch-660094212/" target="_blank" rel="noopener">
+        <li class="linkedin">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <div class="slider">
+            <p>Linkedin</p>
+          </div>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <a id="back2Top" title="Back to top" href="#"><span>&#8250;</span></a>
+
+    <script type="text/javascript" src="./javascript/logo.js"></script>
+
+    <script type="text/javascript" src="./javascript/main.js"></script>
+
+    <script type="text/javascript" src="./javascript/index.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/60964d96185beb22b30b4b30/1f55jfeki';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>
